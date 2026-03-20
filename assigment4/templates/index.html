@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Local Business Directory</h2>
+    <a href="/add">Add New Business</a>
+    <ul>
+        {% for business in businesses %}
+            <li>{{ business.get_info() }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
